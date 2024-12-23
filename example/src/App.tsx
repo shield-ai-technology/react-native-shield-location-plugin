@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import ShieldLocation, { LogLevel, Config, EnvironmentInfo, ShieldCallback } from 'react-native-shield-location-plugin';
+import ShieldLocation, {
+  LogLevel,
+  EnvironmentInfo,
+} from 'react-native-shield-location-plugin';
+import type {
+  Config,
+  ShieldCallback,
+} from 'react-native-shield-location-plugin';
 
 const App = () => {
   const [sessionId, setSessionId] = useState('');
@@ -16,7 +23,7 @@ const App = () => {
     onFailure: (error) => {
       // Handle failure event here
       console.log('Callback Failure:', error);
-      setSuccessResult(error)
+      setSuccessResult(error);
     },
   };
 
@@ -25,23 +32,23 @@ const App = () => {
     secretKey: '9ce44f88a25272b6d9cbb430ebbcfcf1',
     blockedDialog: {
       title: 'Blocked Dialog Title',
-      body: 'Blocked Dialog Body'
+      body: 'Blocked Dialog Body',
     }, // can be null also depending on your requirement,
     logLevel: LogLevel.LogLevelInfo,
-    environmentInfo: EnvironmentInfo.EnvironmentProd
+    environmentInfo: EnvironmentInfo.EnvironmentProd,
   };
 
   useEffect(() => {
     // Call the initShield function with the Config object
     const initializeShield = async () => {
-      await ShieldLocation.initShield(config, callbacks)
+      await ShieldLocation.initShield(config, callbacks);
 
       ShieldLocation.isSDKready(async (isReady: boolean) => {
         if (isReady) {
           console.log('SDK ready for sendAttributes:', isReady);
-          ShieldLocation.sendAttributes("Home", { userid: "userid" }); 
+          ShieldLocation.sendAttributes('Home', { userid: 'userid' });
         } else {
-          console.log("SDK is not ready for sendAttributes");
+          console.log('SDK is not ready for sendAttributes');
         }
       });
       ShieldLocation.isSDKready(async (isReady: boolean) => {
@@ -50,31 +57,31 @@ const App = () => {
           const sessionID = await ShieldLocation.getSessionId(); // Fetch session ID using await
           setSessionId(sessionID); // Set session ID to state
         } else {
-          console.log("SDK is not ready for sessionID");
+          console.log('SDK is not ready for sessionID');
         }
       });
       ShieldLocation.isSDKready(async (isReady: boolean) => {
         if (isReady) {
           console.log('SDK ready for getLatestDeviceResult:', isReady);
-          
+
           ShieldLocation.getLatestDeviceResult()
-          .then((result: object) => {
-            // Handle success with the result object
-            if (!successResult) {
-              console.log('Received latest device result:', result);
-              setSuccessResult(JSON.stringify(result, null, 2));
-            }
-          })
-          .catch((error: object) => {
-            // Handle error with the error object
-            console.log('Error retrieving device result:', error);
-          });
+            .then((result: object) => {
+              // Handle success with the result object
+              if (!successResult) {
+                console.log('Received latest device result:', result);
+                setSuccessResult(JSON.stringify(result, null, 2));
+              }
+            })
+            .catch((error: object) => {
+              // Handle error with the error object
+              console.log('Error retrieving device result:', error);
+            });
         } else {
-          console.log("SDK is not ready for getLatestDeviceResult");
+          console.log('SDK is not ready for getLatestDeviceResult');
         }
       });
-    }
-   initializeShield();
+    };
+    initializeShield();
   }, []);
 
   return (
