@@ -1,6 +1,10 @@
 
 #import <React/RCTBridgeModule.h>
+#import <React/RCTEventEmitter.h>
 
-@interface ShieldLocationPlugin : NSObject <RCTBridgeModule>
+@import ShieldFraud;
+@import ShieldLocationAnalysis;
+
+@interface ShieldLocationPlugin : RCTEventEmitter <RCTBridgeModule, DeviceShieldCallback>
 
 @end

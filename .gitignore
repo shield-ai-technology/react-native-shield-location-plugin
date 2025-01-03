@@ -60,6 +60,9 @@ default.mode1v3
 default.mode2v3
 default.perspectivev3
 
+# CocoaPods
+ios/Pods/
+
 # Android Specific
 .gradle
 local.properties
@@ -108,3 +111,5 @@ buck-out/
 android/app/src/main/assets/index.android.bundle
 android/app/src/main/assets/index.ios.bundle
 .yarn
+example/ios/Podfile.lock
+yarn.lock
