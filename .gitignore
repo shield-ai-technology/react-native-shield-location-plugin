@@ -56,6 +56,7 @@ buck-out
 .settings
 .classpath
 /example/android/app/build/
+/example/android/app/build/*
 
 # Watchman
 .watchmanconfig
