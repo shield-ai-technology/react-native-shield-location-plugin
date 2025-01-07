@@ -153,3 +153,8 @@ android/build/*
 #yarn
 .yarn
 .yarn/*
+
+# lib folders - generated files
+/lib/*
+lib/*
+
