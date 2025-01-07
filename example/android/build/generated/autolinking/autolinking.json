@@ -1,26 +1,26 @@
 {
-  "root": "/Users/Balwant/Documents/locationPlugin/react-native-shield-location-plugin/example",
-  "reactNativePath": "/Users/Balwant/Documents/locationPlugin/react-native-shield-location-plugin/example/node_modules/react-native",
+  "root": "/Users/ayonya/github/ReactNative/react-native-shield-location-plugin/example",
+  "reactNativePath": "/Users/ayonya/github/ReactNative/react-native-shield-location-plugin/example/node_modules/react-native",
   "reactNativeVersion": "0.76",
   "dependencies": {
     "react-native-shield-location-plugin": {
-      "root": "/Users/Balwant/Documents/locationPlugin/react-native-shield-location-plugin",
+      "root": "/Users/ayonya/github/ReactNative/react-native-shield-location-plugin",
       "name": "react-native-shield-location-plugin",
       "platforms": {
         "ios": {
-          "podspecPath": "/Users/Balwant/Documents/locationPlugin/react-native-shield-location-plugin/react-native-shield-location-plugin.podspec",
+          "podspecPath": "/Users/ayonya/github/ReactNative/react-native-shield-location-plugin/react-native-shield-location-plugin.podspec",
           "version": "0.1.0",
           "configurations": [],
           "scriptPhases": []
         },
         "android": {
-          "sourceDir": "/Users/Balwant/Documents/locationPlugin/react-native-shield-location-plugin/android",
+          "sourceDir": "/Users/ayonya/github/ReactNative/react-native-shield-location-plugin/android",
           "packageImportPath": "import com.shieldlocationplugin.ShieldLocationPluginPackage;",
           "packageInstance": "new ShieldLocationPluginPackage()",
           "buildTypes": [],
           "libraryName": "ShieldLocationPlugin",
           "componentDescriptors": [],
-          "cmakeListsPath": "/Users/Balwant/Documents/locationPlugin/react-native-shield-location-plugin/android/build/generated/source/codegen/jni/CMakeLists.txt",
+          "cmakeListsPath": "/Users/ayonya/github/ReactNative/react-native-shield-location-plugin/android/build/generated/source/codegen/jni/CMakeLists.txt",
           "cxxModuleCMakeListsModuleName": null,
           "cxxModuleCMakeListsPath": null,
           "cxxModuleHeaderName": null,
@@ -186,7 +186,7 @@
         {
           "name": "--path <path>",
           "description": "Path to the React Native project root.",
-          "default": "/Users/Balwant/Documents/locationPlugin/react-native-shield-location-plugin/example"
+          "default": "/Users/ayonya/github/ReactNative/react-native-shield-location-plugin/example"
         },
         {
           "name": "--platform <string>",
@@ -237,8 +237,7 @@
         },
         {
           "name": "--terminal <string>",
-          "description": "Launches the Metro Bundler in a new window using the specified terminal path.",
-          "default": "vscode"
+          "description": "Launches the Metro Bundler in a new window using the specified terminal path."
         },
         {
           "name": "--binary-path <string>",
@@ -397,8 +396,7 @@
         },
         {
           "name": "--terminal <string>",
-          "description": "Launches the Metro Bundler in a new window using the specified terminal path.",
-          "default": "vscode"
+          "description": "Launches the Metro Bundler in a new window using the specified terminal path."
         },
         {
           "name": "--appId <string>",
@@ -473,7 +471,7 @@
   "assets": [],
   "project": {
     "ios": {
-      "sourceDir": "/Users/Balwant/Documents/locationPlugin/react-native-shield-location-plugin/example/ios",
+      "sourceDir": "/Users/ayonya/github/ReactNative/react-native-shield-location-plugin/example/ios",
       "xcodeProject": {
         "name": "ShieldLocationPluginExample.xcodeproj",
         "path": ".",
@@ -483,7 +481,7 @@
       "assets": []
     },
     "android": {
-      "sourceDir": "/Users/Balwant/Documents/locationPlugin/react-native-shield-location-plugin/example/android",
+      "sourceDir": "/Users/ayonya/github/ReactNative/react-native-shield-location-plugin/example/android",
       "appName": "app",
       "packageName": "shieldlocationplugin.example",
       "applicationId": "shieldlocationplugin.example",

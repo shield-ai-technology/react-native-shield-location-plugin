@@ -147,6 +147,9 @@ package-lock.json
 .metro-health-check*
 .DS_Store
 android/build
+android/build/*
+../android/build/*
 
 #yarn
 .yarn
+.yarn/*
