@@ -55,8 +55,6 @@ buck-out
 .project
 .settings
 .classpath
-/example/android/app/build/
-/example/android/app/build/*
 
 # Watchman
 .watchmanconfig
@@ -150,6 +148,7 @@ package-lock.json
 android/build
 android/build/*
 ../android/build/*
+example/android/build/*
 
 #yarn
 .yarn
