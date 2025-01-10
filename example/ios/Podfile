@@ -1,5 +1,5 @@
-require_relative '../../node_modules/react-native/scripts/react_native_pods'
-require_relative '../../node_modules/react-native-permissions/scripts/setup.rb'
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/react-native-permissions/scripts/setup.rb'
 
 # Resolve react_native_pods.rb with node to allow for hoisting
 require Pod::Executable.execute_command('node', ['-p',
@@ -30,7 +30,7 @@ target 'ShieldLocationPluginExample' do
   setup_permissions([
      'LocationAlways',
      'LocationWhenInUse',
-  ])s
+  ])
 
   target 'ShieldLocationPluginExampleTests' do
     inherit! :complete
