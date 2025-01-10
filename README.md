@@ -12,9 +12,7 @@ There are few steps to getting started with the SHIELD SDK:
 
 3. [Get Session ID](#get-session-id)
 
-4. [Get Device Results](#get-device-results)
-
-5. [Send Custom Attributes](#send-custom-attributes)
+4. [Send Custom Attributes](#send-custom-attributes)
 
 
 
