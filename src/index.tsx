@@ -1,5 +1,4 @@
 import { NativeModules, NativeEventEmitter } from "react-native";
-import packageJson from '../package.json';
 
 /**
  * Enum representing the log levels for ShieldLocation.
@@ -111,8 +110,8 @@ class ShieldLocation {
    * The cross-platform name and the version is fetched from package.json.
    */
   private static setCrossPlatformParameters(): void {
-    const crossPlatformName = packageJson.name;
-    const crossPlatformVersion = packageJson.version 
+    const crossPlatformName = "react-native-shield-location-plugin" ;
+    const crossPlatformVersion = "1.0.0" ;
 
     ShieldLocation.PlatformWrapper.setCrossPlatformParameters(
       crossPlatformName,

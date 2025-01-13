@@ -1,6 +1,6 @@
 {
   "name": "react-native-shield-location-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React Native Plugin for ShieldFraud SDK and ShieldLocation SDK",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
