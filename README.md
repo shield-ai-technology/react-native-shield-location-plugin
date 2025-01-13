@@ -60,7 +60,7 @@ const config: Config = {
 
 useEffect(() => {
   const initializeShield = async () => {
-    await ShieldFraud.initShield(config);
+    await ShieldLocation.initShield(config);
   };
   
   initializeShield();
@@ -77,7 +77,7 @@ useEffect(() => {
 Note: You can check whether Shield SDK is ready or not by using isSDKready function
 
 ```
-ShieldFraud.isSDKready(async (isReady: boolean) => {
+ShieldLocation.isSDKready(async (isReady: boolean) => {
   if (isReady) {
     // Shield is Ready: Do your implementation
   }
@@ -93,9 +93,9 @@ Session ID follows the OS lifecycle management, in-line with industry best pract
 If you would like to retrieve device results using the backend API, it is important that you store the Session ID on your system. You will need to call the SHIELD backend API using this Session ID.
 
 ```
-ShieldFraud.isSDKready(async (isReady: boolean) => {
+ShieldLocation.isSDKready(async (isReady: boolean) => {
     if (isReady) {
-        const sessionID = await ShieldFraud.getSessionId(); // Fetch session ID using await
+        const sessionID = await ShieldLocation.getSessionId(); // Fetch session ID using await
         console.log('session id: ', sessionID);
     }
 }
@@ -136,7 +136,7 @@ const config: Config = {
 
 useEffect(() => {
   const initializeShield = async () => {
-    await ShieldFraud.initShield(config, callbacks);
+    await ShieldLocation.initShield(config, callbacks);
   };
   initializeShield();
 }, []);
@@ -148,9 +148,9 @@ useEffect(() => {
 Use the sendAttributes function to sent event-based attributes such as user_id or activity_id for enhanced analytics. This function accepts two parameters:screenName where the function is triggered, and data to provide any custom fields in key, value pairs.
 
 ```
-ShieldFraud.isSDKready(async (isReady: boolean) => {
+ShieldLocation.isSDKready(async (isReady: boolean) => {
     if (isReady) {
-        ShieldFraud.sendAttributes('Screen_Name', { key1: 'value1', key2: 'value2' });
+        ShieldLocation.sendAttributes('Screen_Name', { key1: 'value1', key2: 'value2' });
     }
 }
 ```
