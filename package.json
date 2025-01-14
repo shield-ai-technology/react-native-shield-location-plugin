@@ -1,6 +1,6 @@
 {
   "name": "react-native-shield-location-plugin",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "React Native Plugin for ShieldFraud SDK and ShieldLocation SDK",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
@@ -52,17 +52,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/balwant97/react-native-shield-location-plugin.git"
+    "url": "git+https://github.com/shield-ai-technology/react-native-shield-location-plugin.git"
   },
-  "author": "Shield <balwant.singh@shield.com> (https://github.com/balwant97)",
+  "author": "www.shield.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/balwant97/react-native-shield-location-plugin/issues"
+    "url": "https://github.com/shield-ai-technology/react-native-shield-location-plugin/issues"
   },
-  "homepage": "https://github.com/balwant97/react-native-shield-location-plugin#readme",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
+  "homepage": "https://github.com/shield-ai-technology/react-native-shield-location-plugin#readme",
+  
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",
     "@evilmartians/lefthook": "^1.5.0",
