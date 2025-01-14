@@ -66,7 +66,7 @@ useEffect(() => {
   initializeShield();
 }, []);
 ```
-**Note** - ```await ShieldFraud.initShield(config)``` - *The await keyword is used to wait for the promise returned by the initShield function to resolve. In React Native, It is best practice to use `await` when calling native modules from React Native, especially during `asynchronous` operations such as SDK Initialization. This is because using `await` ensures that the main thread is not blocked while the native module is initializing.*
+**Note** - ```await ShieldLocation.initShield(config)``` - *The await keyword is used to wait for the promise returned by the initShield function to resolve. In React Native, It is best practice to use `await` when calling native modules from React Native, especially during `asynchronous` operations such as SDK Initialization. This is because using `await` ensures that the main thread is not blocked while the native module is initializing.*
 
 `Config` has these **optional** parameters:
 
@@ -116,7 +116,7 @@ You can register a callback if you would like to be notified in the event that t
 
 Add an additional parameter during intialization in order to register a callback. 
 
-**For example - `await ShieldFraud.initShield(config, callbacks);`**
+**For example - `await ShieldLocation.initShield(config, callbacks);`**
  ```
  const callbacks: ShieldCallback = {
   onSuccess: (data) => {
